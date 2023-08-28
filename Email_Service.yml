@@ -1,8 +1,14 @@
 spring:
-  security:
-    user:
-      name: mabrouka
-      password: annabi
+   mail:
+    host: smtp.gmail.com
+    port: 587
+    username: insys2stunteam@gmail.com
+    password: forgrhbgftvedmvu
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
   application:
       name: Email_Service
 eureka :
@@ -18,5 +24,5 @@ eureka :
 server:
   port: 8086
   
-user:
-  url: http://localhost:8090/api/auth
+urlApp: "http://localhost:5173/verify"
+ 
