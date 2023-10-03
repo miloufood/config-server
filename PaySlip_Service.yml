@@ -40,3 +40,5 @@ consultant:
   url: http://localhost:8090/api/consultants
 ged:
   url: http://localhost:8090/api/file
+leave:
+  url: http://localhost:8090/api/consultants/leaves
