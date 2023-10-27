@@ -2,7 +2,7 @@ eureka :
   instance:
     client:
       serviceUrl:
-        defaultZone: http://config-server:8761/
+        defaultZone: http://service-registry:8761/
 
 
 spring:
@@ -35,7 +35,7 @@ server:
         include: "*"
         spring:
           config:
-             import: optional:configserver:http://localhost:8888
+             import: optional:configserver:http://config-server:8888
   port: 8084
   
   user:
