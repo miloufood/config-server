@@ -2,7 +2,7 @@ eureka :
   instance:
     client:
       serviceUrl:
-        defaultZone: http://localhost:8761/
+        defaultZone: http://service-registry:8761/
 
 
 spring:
@@ -14,7 +14,7 @@ spring:
       name: mabrouka
       password: annabi
   datasource:
-    url: jdbc:postgresql://localhost:5432/Client_db
+    url: jdbc:postgresql://posgres:5432/Client_db
     username: postgres
     password: insy2s
     driver-class-name: org.postgresql.Driver
@@ -33,6 +33,6 @@ server:
   port: 8081
   
 user:
-  url: http://localhost:8090/api/keycloak/users
+  url: http://service-keycloak-auth:8090/api/keycloak/users
 email:
-  url: http://localhost:8090/api/mail/
+  url: http://service-email:8090/api/mail/
