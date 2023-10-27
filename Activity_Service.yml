@@ -39,7 +39,7 @@ server:
   port: 8084
   
   user:
-    url: http://localhost:8090/api/auth
+    url: http://service-gateway:8090/api/auth
   
 
 
