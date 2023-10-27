@@ -15,14 +15,14 @@ spring:
       connection-timeout: 60000
       maximum-pool-size: 30
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/PayslipDB
+    url: jdbc:postgresql://posgres:5432/PayslipDB
     username: postgres
 
     password: insy2s
 
   jpa:
     hibernate:
-      ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+      ddl-auto: create # When you launch the application for the first time - switch "none" at "create"
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: false
@@ -35,10 +35,10 @@ server:
   port: 8087
 
 user:
-  url: http://localhost:8090/api/auth
+  url: http://service-gateway:8090/api/auth
 consultant:
-  url: http://localhost:8090/api/consultants
+  url: http://service-gateway:8090/api/consultants
 ged:
-  url: http://localhost:8090/api/file
+  url: http://service-gateway:8090/api/file
 leave:
-  url: http://localhost:8090/api/consultants/leaves
+  url: http://service-gateway:8090/api/consultants/leaves
