@@ -33,6 +33,6 @@ server:
   port: 8081
   
 user:
-  url: http://service-keycloak-auth:8090/api/keycloak/users
+  url: http://service-gateway:8090/api/keycloak/users
 email:
-  url: http://service-email:8090/api/mail/
+  url: http://service-gateway:8090/api/mail/
