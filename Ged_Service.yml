@@ -23,7 +23,7 @@ eureka :
   instance:
     client:
       serviceUrl:
-        defaultZone: http://localhost:8761/
+        defaultZone: http://service-registry:8761/
 
 user:
-  url: http://localhost:8090/api/auth
+  url: http://service-gateway:8090/api/auth
