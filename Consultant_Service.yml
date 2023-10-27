@@ -32,11 +32,11 @@ server:
   port: 8085
   
 consultant:
-  url: http://service-consultant:8090/api/consultants
+  url: http://service-gateway:8090/api/consultants
 user:
-  url: http://service-keycloak-auth:8090/api/keycloak/users
+  url: http://service-gateway:8090/api/keycloak/users
 email:
-  url: http://service-email:8090/api/mail
+  url: http://service-gateway:8090/api/mail
 address:
-  url: http://localhost:8090/api/address
+  url: http://service-gateway:8090/api/address
 
