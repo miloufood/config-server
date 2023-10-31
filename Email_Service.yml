@@ -14,11 +14,14 @@ spring:
   application:
       name: Email_Service
 
-eureka :
-      instance:
-            client:
-                  serviceUrl:
-                        defaultZone: http://service-registry:8761/
+eureka:
+  instance:
+    hostname: Email_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
 
 
 
