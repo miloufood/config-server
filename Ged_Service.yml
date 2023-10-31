@@ -19,11 +19,14 @@ server:
   port: 8088
 #  Eureka configuration
 
-eureka :
+eureka:
   instance:
-    client:
-      serviceUrl:
-        defaultZone: http://service-registry:8761/
+    hostname: Ged_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
 
 user:
   url: http://service-gateway:8090/api/auth
