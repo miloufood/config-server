@@ -1,10 +1,11 @@
-eureka :
+eureka:
   instance:
-   client:
+    hostname: Gateway_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-     defaultZone: http://service-registry:8761/eureka
-
- 
+      defaultZone: http://service-registry:8761/eureka
 
 
 
