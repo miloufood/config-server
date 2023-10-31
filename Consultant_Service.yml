@@ -30,6 +30,15 @@ spring:
 #  Server configuration
 server:
   port: 8085
+
+eureka:
+  instance:
+    hostname: Consultant_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
   
 consultant:
   url: http://service-gateway:8090/api/consultants
