@@ -35,11 +35,14 @@ spring:
 #  Server configuration
 server:
   port: 8083
-eureka :
+eureka:
   instance:
-    client:
-      serviceUrl:
-        defaultZone: http://service-registry:8761/
+    hostname: address_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
 
 message: From User Service 123
 
