@@ -34,6 +34,15 @@ spring:
 server:
   port: 8087
 
+eureka:
+  instance:
+    hostname: Payslip_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
+
 user:
   url: http://service-gateway:8090/api/auth
 consultant:
