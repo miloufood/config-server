@@ -22,7 +22,14 @@ spring:
             issuer-uri: https://keycloak.fethi.synology.me/auth/realms/KeyClock-INSY2S
             token-uri: https://keycloak.fethi.synology.me/auth/realms/KeyClock-INSY2S/protocol/openid-connect/token
 
-
+eureka:
+  instance:
+    hostname: Gateway_Service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://service-registry:8761/eureka
 
 
   # Database
