@@ -24,7 +24,7 @@ spring:
 
 eureka:
   instance:
-    hostname: Gateway_Service
+    hostname: Security_Service
   client:
     registerWithEureka: true
     fetchRegistry: true
