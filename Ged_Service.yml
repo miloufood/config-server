@@ -30,3 +30,6 @@ eureka:
 
 user:
   url: http://service-gateway:8090/api/auth
+
+ia:
+  url: http://service-ged:5000/
